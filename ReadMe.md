@@ -25,4 +25,4 @@ To run this website locally, follow these steps:
 
 ## My WebSite Preview
 
-![Landing Page Preview] (https://github.com/N-Balahariraj/OCTANET_DECEMBER/tree/master/Assets/OctanetDecember  LandingPage.png?raw=true)
+![OctanetDecember  LandingPage](https://github.com/N-Balahariraj/OCTANET_DECEMBER/assets/123380494/47494a39-0e96-48b2-b005-f38f8deefe4f)
