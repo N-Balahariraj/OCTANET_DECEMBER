@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0b122e;
+    background-image: url("./Assets/cropped_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+    background-attachment: fixed;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .SidePaneCollapse {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+    background-color: #181f3b;
+    width: 5%;
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 20;
+    position: fixed;
+  }
+  
+  .SidePaneCollapse::-webkit-scrollbar {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  
+  .Expand {
+    width: 15%;
+  }
+  
+  .SidePaneExpand::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .S-Arrow {
+    height: 100vh;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+    left: 4rem;
+  }
+  
+  .ArrowExpand {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+    color: white;
+    background-color: #181f3b;
+    cursor: pointer;
+    border-right: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.5 ease;
+  }
+  
+  .Collapse {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+  
+  .Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #05a3f5;
+    font-size: 35px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#a94acf, #5a77d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+  .SidePaneCollapse .Title h3 {
+    display: none;
+  }
+  
+  .SidePaneCollapse.Expand .Title h3 {
+    display: inline-block;
+  }
+
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+  .SidePaneCollapse .NavBar .NavOps {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgrey;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 25px 30px 25px 30px;
+  
+  }
+  
+  .SidePaneCollapse.Expand .NavBar .NavOps {
+    justify-content: flex-start;
+  
+  }
+  
+  .NavBar .NavOps:hover {
+    box-sizing: border-box;
+    background-color: #333e68;
+    border-radius: .4rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .SidePaneCollapse .NavBar .NavText {
+    display: none;
+  }
+  
+  .SidePaneCollapse.Expand .NavBar .NavText {
+    display: inline-block;
+  }
+  
+  .NavBar .NavOps div .NavIcons {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .FooterBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 100%;
+    color: lightgrey;
+    padding-bottom: 10px;
+    margin-top: auto;
+  }
+  
+  .SidePaneCollapse .FooterBox {
+    display: none;
+  }
+  
+  .SidePaneCollapse.Expand .FooterBox {
+    display: flex;
+  }
+
+  .Header{
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 6rem;
+    top: 1rem;
+    /* margin-top: 0.625rem; */
+    color: white;
+    z-index: 10;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    border-radius:10px;
+    overflow:hidden;
+    top: 0.2rem;
+    cursor: pointer;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .6s;
+    transition: .6s;
+    background-color: #1b2444;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: 45%;
+    left: 4px;
+    bottom: 4px;
+    /* background-color: #1fa17f; */
+    background-image:linear-gradient(to right, #9333ea, #4f46e5, #1d4ed8);
+    -webkit-transition: .6s;
+    transition: .6s;
+    border-radius:7px;
+    overflow:hidden;
+  }
+  
+  .slideTo{
+    padding:0 15px;
+    position:relative;
+    bottom:15px;
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    transform: translateX(90px);
+  }
+
+  .Shows-Movies{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: 5rem;
+    top: 10%;
+  } 
+
+  .Show {
+    display: flex;
+    flex-flow: column;
+    height: 90vh;
+    width: 90vw;
+    /* border: 2px solid white; */
+    padding: 0 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* position: absolute; */
+    /* left: 10rem;
+    top: 10%; */
+  }
+  
+  .Show::-webkit-scrollbar {
+    display: none;
+  }  
+
+  .Discover {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .BookingDetails {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1d2547;
+    color: lightgray;
+    padding: 20px;
+  }
+  
+  .StreamBox {
+    /* visibility: hidden; */
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+  }
+  
+  .StreamBox::-webkit-scrollbar {
+    display: none;
+  }

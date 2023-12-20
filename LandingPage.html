@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LandingPage.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>CineBites | BHR</title>
+</head>
+
+<body>
+    <header>
+        <div class="Header">
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+                <div class="slideTo">
+                    <span>Movies</span>
+                    <span>Theatres</span>
+                </div>
+            </label>
+            <div class="flex mr-3">
+                <div class="flex flex-col text-right px-1">
+                    <span>N.Balahariraj</span>
+                    <span>Balahariraj@sample.com</span>
+                </div>
+                <i class="material-icons" style="font-size:50px;color:white; ">account_circle</i>
+            </div>
+        </div>
+    </header>
+    <aside class="SidePaneCollapse" id="SidePane">
+        <div class="Title">
+            <img src="./Assets/CineBiteIcon.png" alt="logo" class="h-[37px] w-[37px] m-1" />
+            <h3>CineBite</h3>
+        </div>
+        <nav class="NavBar">
+            <a href="#" class="NavOps">
+                <div>
+                    <i class="material-icons" style="font-size:30px;color:white; ">home</i>
+                </div>
+                <span class="NavText ml-3 font-medium">Home</span>
+            </a>
+            <a href="#" class="NavOps">
+                <div>
+                    <i class="material-icons" style="font-size:25px;color:white; ">people</i>
+                </div>
+                <span class="NavText ml-3 font-medium">About Us</span>
+            </a>
+            <a href="#" class="NavOps">
+                <div>
+                    <i class="material-icons" style="font-size:25px;color:white; ">mail</i>
+                </div>
+                <span class="NavText ml-3 font-medium">Contact Us</span>
+            </a>
+            <a href="#" class="NavOps">
+                <div>
+                    <i class="material-icons" style="font-size:25px;color:white; ">settings</i>
+                </div>
+                <span class="NavText ml-3 font-medium">Settings</span>
+            </a>
+            <div class="bg-[#273158] w-[80%] h-0.5 mt-3 ml-5"></div>
+        </nav>
+        <div class="FooterBox">
+            <h4>&copy; copyrights</h4>
+            <span>All Rights Resesrved</span>
+        </div>
+    </aside>
+    <div class="S-Arrow">
+        <div class="ArrowExpand" id="Arrow">
+            <i class="material-icons" style="font-size:25px;color:white; margin-left: 10px;">chevron_right</i>
+        </div>
+    </div>
+    <section class="Shows-Movies">
+        <div class="Show">
+            <span class="text-white font-semibold text-4xl mb-3.5 ">
+                Discover
+            </span>
+            <div class="Discover ml-3">
+                <div class="BookedMovie h-[100%] w-[62%] rounded-lg overflow-hidden">
+                    <iframe width="1000" height="325"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <form class="BookingDetails rounded-md">
+                    <span>Get Ticket</span>
+                    <div class=" flex justify-between content-center bg-[#0b122e] rounded-2xl h-[35px] px-3">
+                        <input type="text" class="outline-none  bg-[#0b122e]" placeholder="Choose Your Movie" />
+                        <BiMoviePlay />
+                    </div>
+                    <div class="flex justify-between content-center bg-[#0b122e] rounded-2xl h-[35px] px-3">
+                        <input type="text" class="outline-none bg-[#0b122e]" placeholder="Choose Your Theatre" />
+                        <CiBank />
+                    </div>
+                    <div class="flex justify-between">
+                        <input type="date"
+                            class="outline-none bg-[#0b122e] rounded-2xl h-[35px] w-[47%] text-center px-3" />
+                        <input type="time"
+                            class="outline-none bg-[#0b122e] rounded-2xl h-[35px] w-[47%] text-center px-3" />
+                    </div>
+                    <button
+                        class="rounded-2xl h-[40px] w-[100%] self-center bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 text-white">
+                        Book Now
+                    </button>
+                </form>
+            </div>
+            <div class="flex justify-between items-center my-3">
+                <span class="text-2xl text-white font-semibold font-sherif">
+                    Streaming
+                </span>
+                <button class="flex items-center w-20 text-sm text-[lightgrey] hover:text-[#00a7fc]">
+                    View all
+                    <i class="material-icons" style="font-size:25px;color:white; ">arrow_drop_down</i>
+                </button>
+            </div>
+            <div class="StreamBox ml-2">
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jigarthanda-double-x-et00359702-1699446701.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                Jigarthanda Double X
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/japan-et00370522-1695382803.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                Japan
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-marvels-et00310793-1698670579.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                The Marvels
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/leo-et00351731-1675663884.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                Leo
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ezhu-kadal-thaandi--side-b-et00375740-1699967333.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                Ezhu Kadal Thandhi - Side B
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-[12rem] w-[22rem] flex ml-3 border-1 rounded-md" style="border: 1px solid white;">
+                    <div class="h-[100%] w-[45%] rounded-lg">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/chevvaikizhamai-et00364713-1699529187.jpg"
+                            class="h-[100%] w-[100%] rounded-lg" alt="..." />
+                    </div>
+                    <div class="h-[100%] w-[55%] flex flex-col justify-around box-border p-2 text-[lightgrey] text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="whitespace-nowrap text-white text-lg font-medium w-[100%] overflow-hidden">
+                                Chevvaikizhamai
+                            </span>
+                        </div>
+                        <span>
+                            Action | Comedy | Period
+                        </span>
+                        <div>
+                            <div class="w-[100%] h-[4px] bg-[#106097] mb-2">
+                                <div class="w-[60%] h-[4px] bg-[#07a0fc]"></div>
+                            </div>
+                            <div class="flex justify-between text-[orange]">
+                                <span>Votes 41.2k</span>
+                                <span class="flex flex-rowjusify-between items-center">
+                                    8.9
+                                    <IoStarSharp />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Trailer
+                                <i class="material-icons" style="font-size:15px;color:white; ">play_circle</i>
+                            </button>
+                            <a href="#"
+                                class="flex justify-around items-center h-7 w-20 text-white rounded box-border bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700 outline-none hover:brightness-90">
+                                Book
+                                <i class="material-icons" style="font-size:15px;color:white; ">confirmation_number</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="LandingPage.js"></script>
+
+</html>
